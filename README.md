@@ -1,7 +1,7 @@
 Tarea 4 – Pruebas Automatizadas con Selenium
 
 Programación 3 – ITLA
-Autor: Luis Emilio Cedano Martínez (Matrícula: 2024-0128)
+Luis Emilio Cedano Martínez (Matrícula: 2024-0128)
 
 Descripción del Proyecto
 
