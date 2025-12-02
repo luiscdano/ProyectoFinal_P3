@@ -70,7 +70,7 @@ Estas pruebas fueron diseñadas para validar el correcto comportamiento del sist
 Video Demostrativo
 
 El video público mostrando la ejecución de las pruebas se encuentra en:
-
+https://www.youtube.com/watch?v=iSfvM64xw1s 
 
 ⸻
 
