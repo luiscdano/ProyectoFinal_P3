@@ -39,32 +39,6 @@ Herramientas de apoyo
 	•	YouTube (video demostrativo)
 	•	 VS Code
 
-⸻
-
-Estructura del Repositorio
-
-Tarea4_Selenium_Programacion3/
-│
-├── BancoAppWeb/                     # Proyecto de la aplicación base
-│   ├── index.html
-│   ├── vistas/
-│   ├── controladores/
-│   └── ...
-│
-├── BancoAppWeb_SeleniumTests/       # Proyecto de pruebas automatizadas
-│   ├── src/test/java/tests/
-│   │   ├── LoginTest.java
-│   │   ├── RegistrarClienteTest.java
-│   │   ├── EditarClienteTest.java
-│   │   ├── EliminarClienteTest.java
-│   │   ├── RegistrarTarjetaTest.java
-│   │   └── ValidacionesTest.java
-│   ├── screenshots/
-│   ├── reports/
-│   └── ...
-│
-└── README.md
-
 
 ⸻
 
