@@ -1,4 +1,4 @@
-Tarea 4 – Pruebas Automatizadas con Selenium
+ProyectoFinal_P3
 
 Programación 3 – ITLA
 Luis Emilio Cedano Martínez (Matrícula: 2024-0128)
@@ -38,8 +38,7 @@ Herramientas de apoyo
 	•	GitHub (control de versiones)
 	•	YouTube (video demostrativo)
 	•	 VS Code
-
-
+	
 ⸻
 
 Historias de Usuario Incluidas
