@@ -82,19 +82,9 @@ ProyectoFinal_P3/
 
 ⸻
 
-5. Ejecución del Proyecto
+5. Datos Importantes
 
-Ejecutar la Aplicación Web
-
-Desde la carpeta BancoAppWeb:
-
-dotnet restore
-dotnet build
-dotnet run
-
-Dirección por defecto:
-
-http://localhost:5243/
+Dirección por defecto: http://localhost:5243/
 
 Usuario semilla (solo en Development):
 	•	Correo: pedrodavid@hotmail.com
