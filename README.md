@@ -1,93 +1,179 @@
-ProyectoFinal_P3
+Proyecto Final – Programación III
 
-Programación 3 – ITLA
-Luis Emilio Cedano Martínez (Matrícula: 2024-0128)
+BancoAppWeb + Pruebas Automatizadas con Selenium
 
-Descripción del Proyecto
+Este repositorio contiene el desarrollo completo del Proyecto Final de la asignatura Programación III (ITLA), compuesto por:
+	1.	BancoAppWeb: aplicación web desarrollada en ASP.NET Core MVC.
+	2.	BancoAppWeb_SeleniumTests: suite de pruebas automatizadas con Java, Selenium WebDriver y TestNG.
+	3.	Planificación del proyecto utilizando la metodología Scrum en Jira.
+	4.	Documentación técnica, plan de pruebas, capturas y entregables requeridos por el profesor.
 
-Este repositorio contiene el desarrollo completo de mi Tarea 4 para la asignatura Programación 3 en el ITLA.
-El objetivo principal es automatizar pruebas sobre una aplicación funcional utilizando Selenium WebDriver,cumpliendo con los criterios técnicos, documentales y de presentación exigidos por el profesor.
-
-Para lograrlo preparé:
-	•	Una aplicación web funcional llamada BancoAppWeb, que sirve como base para las pruebas.
-	•	Un proyecto independiente llamado BancoAppWeb_SeleniumTests, donde implemento todas las pruebas automatizadas.
-	•	Un tablero en Jira donde gestiono las historias de usuario, criterios de aceptación y rechazo, y la trazabilidad completa del proyecto.
-
-Este trabajo representa mi evolución como estudiante, combinando análisis, estructura, automatización y buenas prácticas de desarrollo.
+El objetivo general es implementar un sistema funcional y validarlo mediante pruebas manuales y automatizadas, aplicando buenas prácticas de ingeniería de software y control de calidad.
 
 ⸻
 
-Tecnologías y Herramientas Utilizadas
+1. Descripción General
 
-Aplicación base (BancoAppWeb)
-	•	HTML / CSS / JS
-	•	PHP o lenguaje base según la necesidad del CRUD
-	•	MySQL (si aplica)
-	•	Arquitectura simple para facilitar las pruebas
+BancoAppWeb es una aplicación web que simula funcionalidades básicas de un sistema bancario. El usuario puede:
+	•	Autenticarse de forma segura.
+	•	Registrar, editar, listar, filtrar y eliminar clientes.
+	•	Registrar tarjetas de crédito asociadas a clientes.
 
-Pruebas automatizadas (BancoAppWeb_SeleniumTests)
+En paralelo, se desarrolló un proyecto independiente de pruebas automatizadas utilizando Selenium WebDriver, con casos alineados a las historias de usuario definidas en Jira.
+
+⸻
+
+2. Tecnologías Utilizadas
+
+Backend / Aplicación Web
+	•	ASP.NET Core MVC
+	•	C#
+	•	Entity Framework Core
+	•	SQLite / SQL Server
+	•	Identity para autenticación de usuarios
+
+Automatización de Pruebas
+	•	Java 17
 	•	Selenium WebDriver
-	•	Java
-	•	TestNG / JUnit
-	•	Extent Reports o HTML Report
-	•	Screenshots automáticos
-	•	Patrón Page Object Model (POM) (si se usa)
+	•	TestNG
+	•	Maven
+	•	Page Object Model (POM)
 
-Herramientas de apoyo
-	•	Jira Software (historias de usuario, seguimiento y criterios)
-	•	GitHub (control de versiones)
-	•	YouTube (video demostrativo)
-	•	 VS Code
-	
-⸻
-
-Historias de Usuario Incluidas
-
-Desde HU01 hasta HU07:
-	•	HU01 – Inicio de sesión exitoso
-	•	HU02 – Registrar nuevo cliente
-	•	HU03 – Visualizar listado de clientes
-	•	HU04 – Editar información de un cliente
-	•	HU05 – Eliminar un cliente
-	•	HU06 – Registrar tarjeta de crédito
-	•	HU07 – Validación negativa de campos vacíos
+Gestión Scrum
+	•	Jira Software
+	•	Sprint backlog
+	•	Historias de usuario
+	•	Tablero Kanban
+	•	Burndown Chart
 
 ⸻
 
-Sobre las Pruebas Automatizadas
-
-Implementé al menos un caso de prueba por cada historia de usuario, cumpliendo los tipos:
-	•	 Camino feliz
-	•	Pruebas negativas
-	•	Pruebas de límites
-	•	Capturas automáticas
-	•	Reporte HTML
-
-Estas pruebas fueron diseñadas para validar el correcto comportamiento del sistema bajo interacciones reales del usuario.
-
-
-Video Demostrativo
-
-El video público mostrando la ejecución de las pruebas se encuentra en:
-https://www.youtube.com/watch?v=iSfvM64xw1s 
+3. Funcionalidades Principales
+	•	Inicio de sesión con validaciones completas.
+	•	CRUD de clientes con validaciones de negocio.
+	•	Búsqueda y filtros por nombre, cédula y estado.
+	•	Registro de tarjetas de crédito con requisitos de formato.
+	•	Validación de campos obligatorios y numéricos.
+	•	Pruebas automatizadas end-to-end alineadas al Sprint 0.
 
 ⸻
 
-http://localhost:5239/Identity/Account/Login
+4. Estructura del Repositorio
+
+ProyectoFinal_P3/
+│
+├── BancoAppWeb/                     
+│   ├── Controllers/
+│   ├── Services/
+│   ├── Models/
+│   ├── Views/
+│   ├── wwwroot/
+│   └── appsettings.json
+│
+├── BancoAppWeb_SeleniumTests/       
+│   ├── src/test/java/pages/
+│   ├── src/test/java/tests/
+│   ├── src/test/resources/TestSuite.xml
+│   ├── reports/TestReport.html
+│   └── reports/screenshots/
+│
+└── ProyectoFinal_P3.docx            
+
 
 ⸻
 
-Aporte Personal
+5. Ejecución del Proyecto
 
-Este proyecto me permitió profundizar en el uso profesional de Selenium, la creación de casos de prueba, la organización basada en historias de usuario y la importancia de la automatización en el desarrollo moderno.
-También representó un reto personal que me ayudó a mejorar mis habilidades en Git, Jira, documentación y buenas prácticas.
+Ejecutar la Aplicación Web
 
-Mi objetivo fue no solo cumplir con la tarea, sino crear un proyecto que realmente represente lo que puedo hacer como desarrollador en formación.
+Desde la carpeta BancoAppWeb:
+
+dotnet restore
+dotnet build
+dotnet run
+
+Dirección por defecto:
+
+http://localhost:5243/
+
+Usuario semilla (solo en Development):
+	•	Correo: pedrodavid@hotmail.com
+	•	Contraseña: DevSecure!123
 
 ⸻
 
-📝 Accesos del Profesor
+6. Ejecución de Pruebas Automatizadas
+
+Desde BancoAppWeb_SeleniumTests:
+	1.	Ejecute BancoAppWeb:
+
+dotnet run
+
+	2.	Ejecute la suite de pruebas:
+
+mvn -Dsurefire.suiteXmlFiles=src/test/resources/TestSuite.xml test
+
+	3.	Ubicación de reportes:
+
+	•	reports/TestReport.html
+	•	reports/screenshots/
+
+⸻
+
+7. Metodología Scrum
+
+El proyecto fue gestionado mediante Scrum utilizando Jira, con:
+	•	Cuatro épicas principales.
+	•	Quince historias de usuario (HU01–HU15).
+	•	Sprint backlog del Sprint 0.
+	•	Tablero Kanban con estados To Do, In Progress, In Review y Done.
+	•	Burndown Chart del sprint.
+
+Todas las evidencias se encuentran en el documento final adjunto.
+
+⸻
+
+8. Pruebas Implementadas
+
+La suite de pruebas automatizadas incluye:
+
+Historia	Prueba Automatizada	                   Archivo
+HU01	    Login exitoso	                       LoginTest.java
+HU02	    Registro de cliente	                   ClientesTest.java
+HU07	    Validación de campos vacíos	           ValidacionesTest.java
+HU08	    Validación de formato de correo	       ValidacionesTest.java
+HU09	    Búsqueda por nombre	                   ClientesTest.java
+HU13	    Validación de campos numéricos	       ValidacionesTest.java
+HU15	    Ejecución de suite unificada	       TestSuite.xml
+
+
+⸻
+
+9. Documentación Incluida
+
+El repositorio incluye:
+	•	Documento ProyectoFinal_P3.docx con:
+	•	Épicas y HU.
+	•	Sprint backlog y tablero Scrum.
+	•	Burndown chart.
+	•	Plan de pruebas.
+	•	Casos manuales y automatizados.
+	•	Evidencias de Jira, GitHub, VS Code y Selenium.
+	•	Reportes HTML y capturas de pantallas de pruebas.
+	•	Código del sistema y de las pruebas automatizadas.
+
+⸻
+
+11. Autor
+
+Luis Emilio Cedano Martínez
+Matrícula: 2024-0128
+Instituto Tecnológico de las Américas (ITLA)
+
+⸻
+
+12. Accesos del Profesor
 
 Se otorgó acceso a:
-📧 ktejada@itla.edu.do
-📧 20186927@itla.edu.do
+- ktejada@itla.edu.do
+- 20186927@itla.edu.do
