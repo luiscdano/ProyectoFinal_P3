@@ -280,7 +280,7 @@ Fecha: 10 de diciembre de 2025
 
 ---
 
-## Accesos del Profesor
-Se otorgó acceso a:
+## Accesos solo otorgado a:
+
 - ktejada@itla.edu.do
 - 20186927@itla.edu.do
