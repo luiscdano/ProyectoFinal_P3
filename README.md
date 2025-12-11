@@ -1,169 +1,286 @@
-Proyecto Final – Programación III
+# ProyectoFinal_P3 - BancoAppWeb
 
-BancoAppWeb + Pruebas Automatizadas con Selenium
+## Descripción General
+BancoAppWeb es una aplicación web que simula un módulo básico de banca digital.  
+El sistema permite autenticación de usuarios, gestión de clientes (crear, listar, editar, eliminar), registro de tarjetas, validaciones de datos y pruebas automatizadas con Selenium.
 
-Este repositorio contiene el desarrollo completo del Proyecto Final de la asignatura Programación III (ITLA), compuesto por:
-	1.	BancoAppWeb: aplicación web desarrollada en ASP.NET Core MVC.
-	2.	BancoAppWeb_SeleniumTests: suite de pruebas automatizadas con Java, Selenium WebDriver y TestNG.
-	3.	Planificación del proyecto utilizando la metodología Scrum en Jira.
-	4.	Documentación técnica, plan de pruebas, capturas y entregables requeridos por el profesor.
+Este proyecto fue desarrollado como entrega final de la asignatura Programación III en el Instituto Tecnológico de las Américas (ITLA), aplicando la metodología Agile-Scrum.
 
-El objetivo general es implementar un sistema funcional y validarlo mediante pruebas manuales y automatizadas, aplicando buenas prácticas de ingeniería de software y control de calidad.
+---
 
-⸻
+## Tecnologías Utilizadas
+**Backend / Web**
+- ASP.NET Core MVC  
+- Entity Framework Core  
+- SQLite  
 
-1. Descripción General
+**Frontend**
+- HTML5  
+- CSS  
+- Bootstrap  
 
-BancoAppWeb es una aplicación web que simula funcionalidades básicas de un sistema bancario. El usuario puede:
-	•	Autenticarse de forma segura.
-	•	Registrar, editar, listar, filtrar y eliminar clientes.
-	•	Registrar tarjetas de crédito asociadas a clientes.
+**Automatización de Pruebas**
+- Java 17  
+- Selenium WebDriver  
+- TestNG  
+- Maven  
 
-En paralelo, se desarrolló un proyecto independiente de pruebas automatizadas utilizando Selenium WebDriver, con casos alineados a las historias de usuario definidas en Jira.
+**Gestión y Control de Versiones**
+- Jira Software  
+- GitHub  
+- Visual Studio Code  
 
-⸻
+---
 
-2. Tecnologías Utilizadas
+## Objetivo del Proyecto
+Desarrollar un sistema web funcional acompañado de un conjunto de pruebas automatizadas profesionales, aplicando correctamente la metodología Scrum y asegurando calidad mediante QA manual y automatizado.
 
-Backend / Aplicación Web
-	•	ASP.NET Core MVC
-	•	C#
-	•	Entity Framework Core
-	•	SQLite / SQL Server
-	•	Identity para autenticación de usuarios
+---
 
-Automatización de Pruebas
-	•	Java 17
-	•	Selenium WebDriver
-	•	TestNG
-	•	Maven
-	•	Page Object Model (POM)
+## Alcance
+**Incluye:**
+- Login de usuarios  
+- CRUD de clientes  
+- Registro de tarjetas  
+- Validaciones de datos  
+- Suite completa de pruebas automatizadas con Selenium  
 
-Gestión Scrum
-	•	Jira Software
-	•	Sprint backlog
-	•	Historias de usuario
-	•	Tablero Kanban
-	•	Burndown Chart
+**No incluye:**
+- Pagos reales  
+- Transferencias reales  
 
-⸻
+---
 
-3. Funcionalidades Principales
-	•	Inicio de sesión con validaciones completas.
-	•	CRUD de clientes con validaciones de negocio.
-	•	Búsqueda y filtros por nombre, cédula y estado.
-	•	Registro de tarjetas de crédito con requisitos de formato.
-	•	Validación de campos obligatorios y numéricos.
-	•	Pruebas automatizadas end-to-end alineadas al Sprint 0.
+## Cronograma de Trabajo
+| Actividad              | Fecha        | Responsable   |
+|-------------------------|-------------|---------------|
+| Requerimientos          | 29-30 nov   | Luis Cedano   |
+| Configuración repos     | 30 nov      | Luis Cedano   |
+| Desarrollo web          | 1-5 dic     | Luis Cedano   |
+| QA manual               | 3-6 dic     | Luis Cedano   |
+| Selenium Tests          | 5-8 dic     | Luis Cedano   |
+| Evidencias              | 9-10 dic    | Luis Cedano   |
+| Documento final         | 10 dic      | Luis Cedano   |
 
-⸻
+---
 
-4. Estructura del Repositorio
+## Primer Release
+La primera versión del sistema incluye:
+- Login de usuarios  
+- CRUD de clientes  
+- Validaciones principales  
+- Registro de tarjetas  
+- Suite Selenium completa  
+- Evidencias de ejecución
+  
+---
 
-ProyectoFinal_P3/
+## Metodología Scrum
+**Equipo de Trabajo**
+- Product Owner: Luis Cedano  
+- Scrum Master: Luis Cedano  
+- Developer: Luis Cedano  
+- QA Engineer: Luis Cedano  
+
+**Épicas**
+- EPIC-01: Autenticación  
+- EPIC-02: Gestión de clientes  
+- EPIC-03: Registro de tarjetas  
+- EPIC-04: Pruebas automatizadas Selenium  
+
+**Ceremonias**
+- Sprint Planning: 29 de noviembre  
+- Daily Scrum: 1 al 10 de diciembre (9:00 AM)  
+- Sprint Review: 8 de diciembre  
+- Sprint Retrospective: 10 de diciembre (2:00 PM)  
+
+---
+
+## Historias de Usuario
+Se definieron 15 historias de usuario, cada una con criterios de aceptación, criterios de rechazo y estimación en puntos de historia.  
+Ejemplos:
+- HU01: Inicio de sesión exitoso  
+- HU02: Registrar nuevo cliente  
+- HU05: Eliminar un cliente  
+- HU08: Validación de formato de correo electrónico  
+- HU15: Ejecutar todas las pruebas automatizadas desde una suite unificada  
+
+---
+
+## Plan de Pruebas
+**Requerimientos probados:**
+- RF01: Autenticación  
+- RF02: Registro de clientes  
+- RF03: Edición y eliminación  
+- RF04: Búsqueda y filtrado  
+- RF05: Registro de tarjetas  
+- RF06: Validaciones  
+- RF07: Automatización Selenium  
+
+**Requerimientos no funcionales:**
+- RNF01: Seguridad básica  
+- RNF02: Usabilidad  
+- RNF03: Mantenibilidad  
+- RNF04: Evidencia automatizada  
+
+**Herramientas de Pruebas**
+- Selenium WebDriver  
+- TestNG  
+- Maven  
+
+**Automatización**
+- Ejecución completa mediante `mvn -Dsurefire.suiteXmlFiles=src/test/resources/TestSuite.xml test`  
+- Reportes HTML y capturas automáticas generadas en cada ejecución
+
+### Estucturas
+**BancoAppWeb (Aplicación Web)**
+
+BancoAppWeb/
 │
-├── BancoAppWeb/                     
-│   ├── Controllers/
-│   ├── Services/
-│   ├── Models/
-│   ├── Views/
-│   ├── wwwroot/
-│   └── appsettings.json
+├── Program.cs
+├── appsettings.json
+├── appsettings.Development.json
 │
-├── BancoAppWeb_SeleniumTests/       
-│   ├── src/test/java/pages/
-│   ├── src/test/java/tests/
-│   ├── src/test/resources/TestSuite.xml
-│   ├── reports/TestReport.html
-│   └── reports/screenshots/
+├── Data/
+│   └── ApplicationDbContext.cs
 │
-└── ProyectoFinal_P3.docx            
+├── Migrations/
+│   └── (...archivos Identity + Clientes + Productos...)
+│
+├── Models/
+│   ├── Cliente.cs
+│   ├── Producto.cs
+│   ├── Divisa.cs
+│   └── Usuario.cs
+│
+├── Services/
+│   ├── IClienteService.cs
+│   ├── ClienteService.cs
+│   ├── DatabaseSeeder.cs
+│   └── DivisaService.cs
+│
+├── Controllers/
+│   ├── ClientesController.cs
+│   ├── ProductosController.cs
+│   ├── DivisasController.cs
+│   ├── HomeController.cs
+│   └── SimuladorController.cs
+│
+├── ViewModels/
+│   └── ClienteFormViewModel.cs
+│
+├── Views/
+│   ├── Shared/
+│   │   └── _Layout.cshtml
+│   │
+│   ├── Home/
+│   │   ├── Index.cshtml
+│   │   ├── Privacy.cshtml
+│   │   ├── Security.cshtml
+│   │   └── FAQ.cshtml
+│   │
+│   ├── Clientes/
+│   │   ├── Index.cshtml
+│   │   ├── Create.cshtml
+│   │   ├── Edit.cshtml
+│   │   └── Delete.cshtml
+│   │
+│   ├── Productos/
+│   │   └── Index.cshtml
+│   │
+│   ├── Divisas/
+│   │   ├── Index.cshtml
+│   │   └── (usa wwwroot/js/divisas.js y wwwroot/css/divisas-cards.css)
+│   │
+│   └── Simulador/
+│       ├── Index.cshtml
+│       └── Resultado.cshtml
+│
+├── Areas/
+│   └── Identity/
+│       └── Pages/
+│           └── Account/
+│               ├── Login.cshtml
+│               ├── Register.cshtml
+│               └── (...otros scaffolds...)
+│
+└── wwwroot/
+    ├── css/
+    ├── js/
+    └── images/
+	
+**BancoAppWeb_SeleniumTests (Pruebas Automatizadas)**
 
+BancoAppWeb_SeleniumTests/
+│
+├── pom.xml
+│
+├── reports/
+│   ├── TestReport.html
+│   └── screenshots/
+│       └── index.html
+│       └── (...capturas...)
+│
+└── src/
+    └── test/
+        ├── java/
+        │   ├── pages/
+        │   │   ├── BasePage.java
+        │   │   ├── LoginPage.java
+        │   │   ├── RegisterPage.java
+        │   │   ├── RegistrarUsuarioPage.java
+        │   │   ├── RegistrarClientePage.java
+        │   │   ├── ListarClientesPage.java
+        │   │   ├── EditClientePage.java
+        │   │   └── DeleteClientePage.java
+        │   │
+        │   └── tests/
+        │       ├── BaseTest.java
+        │       ├── LoginTest.java
+        │       ├── ErrorLoginTest.java
+        │       ├── RegistrarUsuarioTest.java
+        │       ├── RegistrarClienteTest.java
+        │       ├── ListarClientesTest.java
+        │       ├── EditarClienteTest.java
+        │       └── EliminarClienteTest.java
+        │
+        ├── utils/
+        │   ├── ReportManager.java
+        │   ├── ScreenshotUtils.java
+        │
+        ├── listeners/
+        │   ├── ReportListener.java
+        │   └── ScreenshotListener.java
+        │
+        └── resources/
+            └── TestSuite.xml
 
-⸻
+---
 
-5. Datos Importantes
+## Entregables
+- Documento PDF con todos los puntos requeridos  
+- Repositorio de código: [GitHub - ProyectoFinal_P3](https://github.com/luiscdano/ProyectoFinal_P3)  
+- Herramienta de gestión: [Jira - SCRUM Board](https://luiscdano.atlassian.net/jira/software/projects/SCRUM/boards/1)  
+- Código de pruebas automatizadas en Java + Selenium  
 
-Dirección por defecto: http://localhost:5243/
+---
 
-Usuario semilla (solo en Development):
-	•	Correo: pedrodavid@hotmail.com
-	•	Contraseña: DevSecure!123
+## Conclusión
+BancoAppWeb cumple con los objetivos planteados en la asignatura, demostrando la aplicación práctica de la metodología Scrum, el desarrollo de un sistema web funcional y la implementación de pruebas automatizadas.  
+Este proyecto refleja un ciclo completo de planificación, desarrollo, validación y documentación, alineado con los estándares académicos y profesionales.
 
-⸻
+---
 
-6. Ejecución de Pruebas Automatizadas
+## Autor
+**Luis Emilio Cedano Martínez**  
+Matrícula: 2024.0128  
+Instituto Tecnológico de las Américas (ITLA)  
+Profesor: Kelyn Tejada Belliard  
+Fecha: 10 de diciembre de 2025
 
-Desde BancoAppWeb_SeleniumTests:
-	1.	Ejecute BancoAppWeb:
+---
 
-dotnet run
-
-	2.	Ejecute la suite de pruebas:
-
-mvn -Dsurefire.suiteXmlFiles=src/test/resources/TestSuite.xml test
-
-	3.	Ubicación de reportes:
-
-	•	reports/TestReport.html
-	•	reports/screenshots/
-
-⸻
-
-7. Metodología Scrum
-
-El proyecto fue gestionado mediante Scrum utilizando Jira, con:
-	•	Cuatro épicas principales.
-	•	Quince historias de usuario (HU01–HU15).
-	•	Sprint backlog del Sprint 0.
-	•	Tablero Kanban con estados To Do, In Progress, In Review y Done.
-	•	Burndown Chart del sprint.
-
-Todas las evidencias se encuentran en el documento final adjunto.
-
-⸻
-
-8. Pruebas Implementadas
-
-La suite de pruebas automatizadas incluye:
-
-Historia	Prueba Automatizada	                   Archivo
-HU01	    Login exitoso	                       LoginTest.java
-HU02	    Registro de cliente	                   ClientesTest.java
-HU07	    Validación de campos vacíos	           ValidacionesTest.java
-HU08	    Validación de formato de correo	       ValidacionesTest.java
-HU09	    Búsqueda por nombre	                   ClientesTest.java
-HU13	    Validación de campos numéricos	       ValidacionesTest.java
-HU15	    Ejecución de suite unificada	       TestSuite.xml
-
-
-⸻
-
-9. Documentación Incluida
-
-El repositorio incluye:
-	•	Documento ProyectoFinal_P3.docx con:
-	•	Épicas y HU.
-	•	Sprint backlog y tablero Scrum.
-	•	Burndown chart.
-	•	Plan de pruebas.
-	•	Casos manuales y automatizados.
-	•	Evidencias de Jira, GitHub, VS Code y Selenium.
-	•	Reportes HTML y capturas de pantallas de pruebas.
-	•	Código del sistema y de las pruebas automatizadas.
-
-⸻
-
-11. Autor
-
-Luis Emilio Cedano Martínez
-Matrícula: 2024-0128
-Instituto Tecnológico de las Américas (ITLA)
-
-⸻
-
-12. Accesos del Profesor
-
+## Accesos del Profesor
 Se otorgó acceso a:
 - ktejada@itla.edu.do
 - 20186927@itla.edu.do
